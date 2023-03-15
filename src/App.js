@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Quote from "./Quote";
+import Author from "./Author";
+import Social from "./Social";
+import Refresh from "./Refresh";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   const defaultBackground = "saddlebrown";
+   return (
+      <div className="App">
+         <main className="App-main">
+            <Quote backgroundColour={defaultBackground} />
+            <Author backgroundColour={defaultBackground} />
+            <footer className="App-footer">
+               <div className="App-social">
+                  <Social backgroundColour={defaultBackground} />
+                  <Social backgroundColour={defaultBackground} />
+               </div>
+               <Refresh backgroundColour={defaultBackground} />
+            </footer>
+         </main>
+      </div>
+   );
 }
 
 export default App;
