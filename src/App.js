@@ -1,8 +1,9 @@
+import React from "react";
 import "./App.css";
-import Quote from "./Quote";
-import Author from "./Author";
-import Social from "./Social";
-import Refresh from "./Refresh";
+import Quote from "./components/Quote";
+import Author from "./components/Author";
+import Social from "./components/Social";
+import Refresh from "./components/Refresh";
 
 function App() {
    const defaultBackground = "saddlebrown";
