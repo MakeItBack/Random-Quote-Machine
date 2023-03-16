@@ -12,7 +12,11 @@ function Social(props) {
       justifyContent: "center",
       marginRight: 6,
    };
-   return <div style={styles}>S</div>;
+   return (
+      <div style={styles}>
+         <a href={props.socialLink || "#"}>{props.socialIcon || "#"}</a>
+      </div>
+   );
 }
 
 export default Social;

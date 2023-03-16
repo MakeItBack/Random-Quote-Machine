@@ -16,4 +16,5 @@
 .App-social {
    display: flex;
    flex-flow: row nowrap;
+   color: whitesmoke;
 }
