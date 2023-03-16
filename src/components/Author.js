@@ -3,7 +3,7 @@ function Author(props) {
    const sampleAuthor = "Beverley Sills";
    return (
       <div id="author" style={styles}>
-         - {sampleAuthor}
+         - {props.author || sampleAuthor}
       </div>
    );
 }
