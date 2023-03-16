@@ -1,6 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
-
 function Quote(props) {
    const styles = {
       fontSize: 25,
@@ -12,9 +9,9 @@ function Quote(props) {
    const sampleQuote = "You may be disappointed if you fail, but you are doomed if you don’t try.";
    return (
       <div style={styles}>
-         <FontAwesomeIcon icon={faQuoteLeft} />
+         {props.quoteLeft}
          {props.quote || sampleQuote}
-         <FontAwesomeIcon icon={faQuoteRight} />
+         {props.quoteRight}
       </div>
    );
 }
