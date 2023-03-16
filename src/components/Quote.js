@@ -8,7 +8,7 @@ function Quote(props) {
    };
    const sampleQuote = "You may be disappointed if you fail, but you are doomed if you don’t try.";
    return (
-      <div style={styles}>
+      <div id="text" style={styles}>
          {props.quoteLeft}
          {props.quote || sampleQuote}
          {props.quoteRight}

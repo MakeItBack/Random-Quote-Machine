@@ -4,7 +4,7 @@ function Refresh(props) {
       width: 100,
       backgroundColor: props.backgroundColour,
       borderRadius: 4,
-      color: "white",
+      color: "whitesmoke",
       fontSize: 13,
       margin: 0,
       display: "flex",
@@ -12,8 +12,8 @@ function Refresh(props) {
       justifyContent: "center",
    };
    return (
-      <div style={styles}>
-         <p>Hit me!</p>
+      <div id="new-quote" style={styles}>
+         <p>New one!</p>
       </div>
    );
 }

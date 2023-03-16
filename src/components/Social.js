@@ -4,7 +4,7 @@ function Social(props) {
       width: 40,
       backgroundColor: props.backgroundColour,
       borderRadius: 4,
-      color: "white",
+      color: "whitesmoke",
       fontSize: 20,
       margin: 0,
       display: "flex",
@@ -14,7 +14,9 @@ function Social(props) {
    };
    return (
       <div style={styles}>
-         <a href={props.socialLink || "#"}>{props.socialIcon || "#"}</a>
+         <a id={props.linkId || ""} target="_blank" rel="noreferrer" href={props.socialLink || "#"}>
+            {props.socialIcon || "#"}
+         </a>
       </div>
    );
 }

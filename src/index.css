@@ -1,8 +1,7 @@
 body {
    margin: 0;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
-   color: antiquewhite;
-   background-color: saddlebrown;
+   background-color: gray;
    display: flex;
    align-items: center;
    justify-content: center;
