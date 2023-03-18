@@ -10,9 +10,10 @@ function Refresh(props) {
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
+      cursor: "pointer",
    };
    return (
-      <div id="new-quote" style={styles}>
+      <div id="new-quote" style={styles} onClick={props.newQuote}>
          <p>New one!</p>
       </div>
    );

@@ -10,45 +10,64 @@ import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import { faTwitter, faReddit } from "@fortawesome/free-brands-svg-icons";
 const generateQuotes = require("quotes-gen");
 
-function App() {
-   const defaultBackground = "saddlebrown";
-   const newBackgroundColour = uniqolor.random({ lightness: [30], saturation: [60] }).color;
-   const newQuote = generateQuotes();
-   const encodedQuote = encodeURI(`"${newQuote[0].quote}" - ${newQuote[0].author}`);
-   console.log(encodedQuote);
-   console.log(newQuote);
-   return (
-      <div className="App">
-         <main className="App-main" id="quote-box">
-            <Quote
-               backgroundColour={newBackgroundColour || defaultBackground}
-               quote={newQuote[0].quote}
-               quoteLeft={<FontAwesomeIcon icon={faQuoteLeft} />}
-               quoteRight={<FontAwesomeIcon icon={faQuoteRight} />}
-            />
-            <Author
-               author={newQuote[0].author}
-               backgroundColour={newBackgroundColour || defaultBackground}
-            />
-            <footer className="App-footer">
-               <div className="App-social">
-                  <Social
-                     backgroundColour={newBackgroundColour || defaultBackground}
-                     socialLink={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${encodedQuote}`}
-                     socialIcon={<FontAwesomeIcon icon={faTwitter} className="App-social" />}
-                     linkId="tweet-quote"
+class App extends React.Component {
+   constructor(props) {
+      super(props);
+      this.state = {
+         quote: "",
+         author: "",
+         backgroundColour: "black",
+      };
+      this.getQuote = this.getQuote.bind(this);
+   }
+   getQuote() {
+      const newQuote = generateQuotes();
+      const newBackgroundColour = uniqolor.random({ lightness: [30], saturation: [60] });
+      this.setState({
+         quote: newQuote[0].quote,
+         author: newQuote[0].author,
+         backgroundColour: newBackgroundColour.color,
+      });
+   }
+   render() {
+      if (this.state.quote === "") {
+         this.getQuote();
+      }
+      const encodedQuote = encodeURI(`"${this.state.quote}" - ${this.state.author}`);
+      console.log(this.state.quote, this.state.author);
+      return (
+         <div className="App">
+            <main className="App-main" id="quote-box">
+               <Quote
+                  backgroundColour={this.state.backgroundColour}
+                  quote={this.state.quote}
+                  quoteLeft={<FontAwesomeIcon icon={faQuoteLeft} />}
+                  quoteRight={<FontAwesomeIcon icon={faQuoteRight} />}
+               />
+               <Author author={this.state.author} backgroundColour={this.state.backgroundColour} />
+               <footer className="App-footer">
+                  <div className="App-social">
+                     <Social
+                        backgroundColour={this.state.backgroundColour}
+                        socialLink={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${encodedQuote}`}
+                        socialIcon={<FontAwesomeIcon icon={faTwitter} className="App-social" />}
+                        linkId="tweet-quote"
+                     />
+                     <Social
+                        backgroundColour={this.state.backgroundColour}
+                        socialLink={`https://reddit.com/submit?title=Quote%20of%20the%20Day%21&text=${encodedQuote}`}
+                        socialIcon={<FontAwesomeIcon icon={faReddit} className="App-social" />}
+                     />
+                  </div>
+                  <Refresh
+                     backgroundColour={this.state.backgroundColour}
+                     newQuote={this.getQuote}
                   />
-                  <Social
-                     backgroundColour={newBackgroundColour || defaultBackground}
-                     socialLink={`https://reddit.com/submit?title=Quote%20of%20the%20Day%21&text=${encodedQuote}`}
-                     socialIcon={<FontAwesomeIcon icon={faReddit} className="App-social" />}
-                  />
-               </div>
-               <Refresh backgroundColour={newBackgroundColour || defaultBackground} />
-            </footer>
-         </main>
-      </div>
-   );
+               </footer>
+            </main>
+         </div>
+      );
+   }
 }
 
 export default App;

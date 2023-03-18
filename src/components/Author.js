@@ -1,9 +1,8 @@
 function Author(props) {
    const styles = { textAlign: "right", color: props.backgroundColour };
-   const sampleAuthor = "Beverley Sills";
    return (
       <div id="author" style={styles}>
-         - {props.author || sampleAuthor}
+         - {props.author}
       </div>
    );
 }
