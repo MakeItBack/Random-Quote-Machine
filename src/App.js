@@ -7,7 +7,7 @@ import Refresh from "./components/Refresh";
 import uniqolor from "uniqolor";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
-import { faTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faReddit } from "@fortawesome/free-brands-svg-icons";
 const generateQuotes = require("quotes-gen");
 
 function App() {
@@ -35,14 +35,13 @@ function App() {
                   <Social
                      backgroundColour={newBackgroundColour || defaultBackground}
                      socialLink={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${encodedQuote}`}
-                     //https://twitter.com/intent/tweet?url={url}&text={title}&via={user_id}&hashtags={hash_tags}
                      socialIcon={<FontAwesomeIcon icon={faTwitter} className="App-social" />}
                      linkId="tweet-quote"
                   />
                   <Social
                      backgroundColour={newBackgroundColour || defaultBackground}
-                     socialLink="https://random-quote-machine.freecodecamp.rocks/"
-                     socialIcon={<FontAwesomeIcon icon={faLinkedinIn} className="App-social" />}
+                     socialLink={`https://reddit.com/submit?title=Quote%20of%20the%20Day%21&text=${encodedQuote}`}
+                     socialIcon={<FontAwesomeIcon icon={faReddit} className="App-social" />}
                   />
                </div>
                <Refresh backgroundColour={newBackgroundColour || defaultBackground} />

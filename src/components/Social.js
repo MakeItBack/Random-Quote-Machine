@@ -5,7 +5,7 @@ function Social(props) {
       backgroundColor: props.backgroundColour,
       borderRadius: 4,
       color: "whitesmoke",
-      fontSize: 20,
+      fontSize: 22,
       margin: 0,
       display: "flex",
       alignItems: "center",
