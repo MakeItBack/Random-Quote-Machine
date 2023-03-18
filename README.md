@@ -13,7 +13,7 @@
 </details>
 
 ## Summary
-Generates random quotes
+Generates random quotes<br>
 A project built as part of the **Front End Development Libraries** course by **freeCodeCamp**
 
 ## Technologies
@@ -43,5 +43,5 @@ This project is deployed on XXXXXXXXX
 
 ## License
 
-<a href="https://opensource.org/licenses"><img src="https://img.shields.io/github/license/MakeItBack/Trello-Delete-App?color=dodgerblue"></a><br>
+<a href="https://opensource.org/licenses"><img src="https://img.shields.io/github/license/MakeItBack/Random-Quote-Machine?color=dodgerblue"></a><br>
 This project is licensed under the terms of the BSD 3-clause "New" or "Revised" license.
