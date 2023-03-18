@@ -14,6 +14,8 @@ function App() {
    const defaultBackground = "saddlebrown";
    const newBackgroundColour = uniqolor.random({ lightness: [30], saturation: [60] }).color;
    const newQuote = generateQuotes();
+   const encodedQuote = encodeURI(`"${newQuote[0].quote}" - ${newQuote[0].author}`);
+   console.log(encodedQuote);
    console.log(newQuote);
    return (
       <div className="App">
@@ -32,7 +34,8 @@ function App() {
                <div className="App-social">
                   <Social
                      backgroundColour={newBackgroundColour || defaultBackground}
-                     socialLink="twitter.com/intent/tweet"
+                     socialLink={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${encodedQuote}`}
+                     //https://twitter.com/intent/tweet?url={url}&text={title}&via={user_id}&hashtags={hash_tags}
                      socialIcon={<FontAwesomeIcon icon={faTwitter} className="App-social" />}
                      linkId="tweet-quote"
                   />
