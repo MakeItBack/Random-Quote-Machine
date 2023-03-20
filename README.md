@@ -19,19 +19,20 @@ A project built as part of the **Front End Development Libraries** course by **f
 ## Technologies
 [
 <img align="left" height="32" width="32" alt="Sass" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/react.svg" />
-<img align="left" height="32" width="32" alt="Sass" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/npm.svg" />
-<img align="left" height="32" width="32" alt="CSS3" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/html5.svg" />
+<img align="left" height="32" width="32" alt="NPM" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/npm.svg" />
+<img align="left" height="32" width="32" alt="HTML5" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/html5.svg" />
 <img align="left" height="32" width="32" alt="CSS3" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/css3.svg" />
-<img align="left" height="32" width="32" alt="CSS3" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/javascript.svg" />
-<img align="left" height="32" width="32" alt="CSS3" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/fontawesome.svg" />
+<img align="left" height="32" width="32" alt="JavaScript" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/javascript.svg" />
+<img align="left" height="32" width="32" alt="Fontawesome" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/fontawesome.svg" />
 ](https://github.com/MakeItBack/Learning-Tracker)<br>
 
 This project is built with **React** using [Create React App](https://github.com/facebook/create-react-app), [quotes-gen](https://github.com/qxb3/quotes-gen) and [uniqolor](https://github.com/dastoori/uniqolor)
 
 ---
+
+![Screenshot animation](public/screencapture.gif)
+
 ---
-
-
 
 ## Live Site
 
