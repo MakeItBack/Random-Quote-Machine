@@ -6,7 +6,7 @@
    box-sizing: border-box;
 }
 
-.App-footer {
+.App-buttons {
    display: flex;
    flex-flow: row nowrap;
    justify-content: space-between;
@@ -17,4 +17,29 @@
    display: flex;
    flex-flow: row nowrap;
    color: whitesmoke;
+}
+
+.App-footer {
+   position: absolute;
+   bottom: 2%;
+}
+
+.App-footer a {
+   text-decoration: none;
+   color: whitesmoke;
+}
+
+.App-footer div {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+
+.App-footer img {
+   width: 30px;
+   margin: 0 10px;
+}
+
+.App-footer span {
+   font-weight: 700;
 }

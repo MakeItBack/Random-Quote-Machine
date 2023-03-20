@@ -45,7 +45,7 @@ class App extends React.Component {
                   quoteRight={<FontAwesomeIcon icon={faQuoteRight} />}
                />
                <Author author={this.state.author} backgroundColour={this.state.backgroundColour} />
-               <footer className="App-footer">
+               <div className="App-buttons">
                   <div className="App-social">
                      <Social
                         backgroundColour={this.state.backgroundColour}
@@ -63,8 +63,18 @@ class App extends React.Component {
                      backgroundColour={this.state.backgroundColour}
                      newQuote={this.getQuote}
                   />
-               </footer>
+               </div>
             </main>
+            <footer className="App-footer">
+               <a target="_blank" rel="noreferrer" href="https://github.com/MakeItBack">
+                  <div>
+                     <p>
+                        Built with React using CRA by <span>MakeItBack</span>
+                     </p>
+                     <img src="github.svg" alt="github logo" />
+                  </div>
+               </a>
+            </footer>
          </div>
       );
    }
