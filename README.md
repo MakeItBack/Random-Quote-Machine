@@ -35,7 +35,9 @@ This project is built with **React** using [Create React App](https://github.com
 
 ## Live Site
 
-This project is deployed on XXXXXXXXX
+This project is [deployed on Netlify](https://rando-quote.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/29410657-4b97-4ce5-aa49-d826197c2917/deploy-status)](https://app.netlify.com/sites/rando-quote/deploys)
 
 ## Status
 <a href="https://GitHub.com/MakeItBack/Random-Quote-Machine/graphs/commit-activity"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>
@@ -43,5 +45,6 @@ This project is deployed on XXXXXXXXX
 
 ## License
 
-<a href="https://opensource.org/licenses"><img src="https://img.shields.io/github/license/MakeItBack/Random-Quote-Machine?color=dodgerblue"></a><br>
 This project is licensed under the terms of the BSD 3-clause "New" or "Revised" license.
+
+<a href="https://opensource.org/licenses"><img src="https://img.shields.io/github/license/MakeItBack/Random-Quote-Machine?color=dodgerblue"></a><br>
